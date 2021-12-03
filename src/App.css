@@ -22,6 +22,11 @@
 	flex-wrap: wrap;
 	justify-content: space-evenly;
 }
+.shopping-body,
+.text {
+	display: flex;
+	flex-direction: column;
+}
 .shopping-card {
 	min-width: 250px;
 	max-width: 290px;
@@ -32,6 +37,19 @@
 	object-fit: contain;
 	height: 230px;
 	border-radius: 10px;
+	margin-top: 10px;
+}
+.title {
+	text-align: center;
+	/* font-weight: bold; */
+}
+.price {
+	text-align: center;
+	font-weight: bold;
+	font-size: 20px;
+}
+.to-cart {
+	margin: auto;
 }
 .footer {
 	height: 20vh;
