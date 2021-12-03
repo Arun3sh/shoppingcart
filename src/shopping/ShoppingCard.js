@@ -26,21 +26,20 @@ export function Shoppingcard() {
 	];
 	return (
 		<section className="shopping-section">
-			{/* <div className="card">my card</div> */}
+			{/* Traversing through the array to get the product data */}
 			{productName.map((product, index) => {
-				// console.log(product.name, index);
 				return (
 					<Card className="shopping-card" key={index}>
 						<Card.Img className="shopping-image" variant="top" src={product.img} />
-						<Card.Body>
-							<Card.Title>{product.name}</Card.Title>
-							<Card.Text>
+						<Card.Body className="shopping-body">
+							<Card.Title className="title">{product.name}</Card.Title>
+							<Card.Text className="text">
 								<span className="description">
 									Product description comes here to explain about the product.
 								</span>
 								<span className="price">$15.00 - $25.00</span>
 							</Card.Text>
-							<Button className="btn btn-primary">Add to Cart</Button>
+							<Button className="btn btn-primary to-cart">Add to Cart</Button>
 						</Card.Body>
 					</Card>
 				);
