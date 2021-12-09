@@ -51,6 +51,28 @@
 .to-cart {
 	margin: auto;
 }
+.cartValue {
+	width: 33%;
+}
+.value {
+	width: 33%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+input[type='radio'] {
+	display: none;
+}
+.star-rating {
+	display: flex;
+	margin-bottom: 20px;
+	align-items: center;
+	justify-content: center;
+}
+.star {
+	cursor: pointer;
+	transition: 20ms;
+}
 .footer {
 	height: 20vh;
 	background-color: #151619;
