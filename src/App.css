@@ -1,5 +1,6 @@
 .myNav {
-	height: 10vh;
+	min-height: 10vh;
+	max-height: fit-content;
 }
 .header {
 	display: flex;
