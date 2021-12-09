@@ -1,8 +1,7 @@
-// import { FaShoppingCart } from 'react-icons/fa';
 import { AiOutlineShoppingCart } from 'react-icons/ai';
-import { Navbar, Container, Nav, NavDropdown } from 'react-bootstrap';
+import { Navbar, Container, Nav, NavDropdown, Badge } from 'react-bootstrap';
 
-export function MyNavbar() {
+export function MyNavbar({ cart }) {
 	return (
 		<Navbar bg="light" expand="lg" className="myNav">
 			<Container>
@@ -16,13 +15,15 @@ export function MyNavbar() {
 							<NavDropdown.Item href="#category/electronics">Electronics</NavDropdown.Item>
 							<NavDropdown.Item href="#category/clothes">Clothes</NavDropdown.Item>
 							<NavDropdown.Item href="#category/toys">Toys</NavDropdown.Item>
-							{/* <NavDropdown.Divider /> */}
+
 							<NavDropdown.Item href="#category/hs">Household Stationary</NavDropdown.Item>
 						</NavDropdown>
 					</Nav>
 					<button className="btn btn-primary">
-						<AiOutlineShoppingCart />
-						{/* <FaShoppingCart /> */} Cart 0
+						<AiOutlineShoppingCart /> Cart{' '}
+						<Badge pill bg="black">
+							{cart}
+						</Badge>
 					</button>
 				</Navbar.Collapse>
 			</Container>
