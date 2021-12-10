@@ -15,7 +15,11 @@ export function StarRating() {
 							value={ratingValue}
 							onClick={() => setRating(ratingValue)}
 						/>
-						<FaStar className="star" color={ratingValue <= rating ? 'yellow' : 'black'} size={20} />
+						<FaStar
+							className="star"
+							color={ratingValue <= rating ? 'rgba(255, 255, 0, 0.9)' : 'rgba(255,255,255,0.9)'}
+							size={15}
+						/>
 					</label>
 				);
 			})}
