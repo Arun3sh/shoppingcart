@@ -17,7 +17,7 @@ export function StarRating() {
 						/>
 						<FaStar
 							className="star"
-							color={ratingValue <= rating ? 'rgba(255, 255, 0, 0.9)' : 'rgba(255,255,255,0.9)'}
+							color={ratingValue <= rating ? 'rgba(255, 255, 0, 0.9)' : '#d1d5bc'}
 							size={15}
 						/>
 					</label>

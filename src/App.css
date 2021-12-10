@@ -34,8 +34,9 @@
 .shopping-card {
 	min-width: 250px;
 	max-width: 290px;
-	border: 1px solid;
+	border: 1px solid transparent;
 	border-radius: 10px;
+	box-shadow: 5px -3px 10px;
 }
 .shopping-image {
 	object-fit: contain;
@@ -45,6 +46,7 @@
 }
 .title {
 	text-align: center;
+	margin-bottom: 5px;
 }
 .description {
 	color: gray;
@@ -57,6 +59,7 @@
 }
 .to-cart {
 	margin: auto;
+	font-size: 14px;
 }
 .cartValue {
 	width: 33%;
@@ -104,9 +107,11 @@ input[type='radio'] {
 	}
 	.shopping-card {
 		flex-direction: row;
+		align-items: center;
 	}
 	.shopping-image {
 		width: 50%;
+		height: 150px;
 	}
 	.card-title {
 		font-size: 16px;
