@@ -56,12 +56,12 @@ export function Shoppingcard({ cart, setCart, name, img, index }) {
 					Add to Cart
 				</Button>
 				<ButtonGroup style={btnGrpStyle}>
-					<Button className="btn btn-primary cartValue" onClick={addCartValue}>
-						+
-					</Button>
-					<span className="value">{cartValue}</span>
 					<Button className="btn btn-primary cartValue" onClick={removeCartValue}>
 						-
+					</Button>
+					<span className="value">{cartValue}</span>
+					<Button className="btn btn-primary cartValue" onClick={addCartValue}>
+						+
 					</Button>
 				</ButtonGroup>
 			</Card.Body>

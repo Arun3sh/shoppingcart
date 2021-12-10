@@ -4,9 +4,9 @@ import { Navbar, Container, Nav, NavDropdown, Badge } from 'react-bootstrap';
 export function MyNavbar({ cart }) {
 	return (
 		<Navbar bg="light" expand="lg" className="myNav">
-			<Container>
+			<Container className="nav-container">
 				<Navbar.Brand href="#home">MyShopping</Navbar.Brand>
-				<Navbar.Toggle aria-controls="basic-navbar-nav" />
+				<Navbar.Toggle aria-controls="basic-navbar-nav" className="hamburger-menu" />
 				<Navbar.Collapse id="basic-navbar-nav">
 					<Nav className="me-auto">
 						<Nav.Link href="#home">Home</Nav.Link>
