@@ -1,20 +1,23 @@
+:root {
+	--mainColor: #151619;
+	--secondary: #0fc469;
+}
 .myNav {
 	min-height: 10vh;
 	max-height: fit-content;
+	background-color: var(--mainColor) !important;
+}
+.nav-container a {
+	color: var(--secondary) !important;
+}
+.hamburger-menu {
+	background-color: white;
 }
 .header {
-	display: flex;
-	height: 30vh;
-	background-color: #151619;
-	justify-content: center;
-	align-items: center;
+	height: 35vh;
 }
-.header-content {
-	color: #0fc469;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	flex-direction: column;
+.image {
+	width: 100%;
 }
 .shopping-section {
 	display: flex;
@@ -42,7 +45,10 @@
 }
 .title {
 	text-align: center;
-	/* font-weight: bold; */
+}
+.description {
+	color: gray;
+	text-align: center;
 }
 .price {
 	text-align: center;
@@ -76,9 +82,47 @@ input[type='radio'] {
 }
 .footer {
 	height: 20vh;
-	background-color: #151619;
-	color: #0fc469;
+	background-color: var(--mainColor);
+	color: var(--secondary);
 	display: flex;
 	justify-content: center;
 	align-items: center;
+}
+@media screen and (max-width: 768px) {
+	.header {
+		height: 25vh;
+	}
+}
+@media screen and (max-width: 640px) {
+	.header {
+		height: 20vh;
+	}
+}
+@media screen and (max-width: 480px) {
+	.header {
+		height: 15vh;
+	}
+	.shopping-card {
+		flex-direction: row;
+	}
+	.shopping-image {
+		width: 50%;
+	}
+	.card-title {
+		font-size: 16px;
+	}
+	.description {
+		font-size: 12px;
+	}
+	.price {
+		font-size: 14px;
+	}
+	.star-rating {
+		margin-bottom: 5px;
+	}
+}
+@media screen and (max-width: 380px) {
+	.header {
+		height: 10vh;
+	}
 }
